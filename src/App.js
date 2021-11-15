@@ -11,7 +11,7 @@ function App() {
   
   
   useEffect(() => {
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=18da0d9d964122cc2b58e005a3db49a4`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=${APIKey}`)
     .then(res => {
       res.json().then(data => {
         if(data != null) {
